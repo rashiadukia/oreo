@@ -4,9 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
 
-  def hello
+  include SessionsHelper
 
-      render html: "hello rashi"
-
-  end
 end
